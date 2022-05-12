@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">0
+        <script type="text/javascript" src="pizzas.js"></script>
+        <title>Nandia's Garden | Pizzas</title>
+    </head>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #238a44;">
+        <div class="container">
+            <a class="navbar-brand" href="/">Nandia's Garden</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/order">Order Pizza</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <body>
+        <div class="container">
+            <h1>Order Pizzas</h1>
+            <h2></h2>
+
+
+            <form action="/pizzas" method="post">
+
+                <tr>
+                    <th><label for="id_form-0-topping1">Topping 1:</label></th>
+                    <td><input type="text" name="form-0-topping1" maxlength="100" id="id_form-0-topping1"></td>
+                </tr>
+                <tr>
+                    <th><label for="id_form-0-topping2">Topping 2:</label></th>
+                    <td><input type="text" name="form-0-topping2" maxlength="100" id="id_form-0-topping2"></td>
+                </tr>
+                <tr>
+                    <th><label for="id_form-0-size">Size:</label></th>
+                    <td>
+                        <select name="form-0-size" id="id_form-0-size">
+                            <option value="" selected>---------</option>
+
+                            <option value="1">Small</option>
+
+                            <option value="2">Medium</option>
+
+                            <option value="3">Large</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <br><br>
+
+                <div class="form_element">
+                    <input type="submit" value="Order Pizza" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
